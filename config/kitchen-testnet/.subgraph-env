@@ -1,0 +1,3 @@
+V2_TOKEN_SUBGRAPH_NAME="v2-tokens-kitchen-testnet"
+V2_TOKEN_SUBGRAPH_VERSION="v0.0.1"
+V2_SUBGRAPH_NAME="kitchenswap-v2-subgraph"

@@ -17,6 +17,7 @@ export enum NETWORK {
   UNICHAIN = 'unichain-mainnet',
   WORLDCHAIN = 'worldchain-mainnet',
   ZORA = 'zora-mainnet',
+  KITCHEN_TESTNET = 'kitchen-testnet',
 }
 
 export enum SUBGRAPH_TYPE {
