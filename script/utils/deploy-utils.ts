@@ -6,6 +6,7 @@ import { getAlchemyDeploymentParams, getSubgraphName, prepare } from './prepareN
 const exec = util.promisify(execCallback)
 
 // Creating subgraphs is only available from hosted-service dashboard
+// Make sure to run the following command!! The node gotta port 8020
 // yarn graph create $network_name-v2 --node https://api.thegraph.com/deploy/ --access-token $SUBGRAPH_DEPLOY_KEY"
 export const build = async (network, subgraphType) => {
   console.log(`Building subgraph for ${network}`)
