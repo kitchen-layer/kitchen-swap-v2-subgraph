@@ -1,30 +1,30 @@
 import { Address, BigDecimal, BigInt } from '@graphprotocol/graph-ts/index'
 
-export const FACTORY_ADDRESS = '0x7B5aF4Ef061DBF061488f7da3ADC418b8E4a99A5'
+export const FACTORY_ADDRESS = '0x1fb625ba3c45642d4485c45e90757d147a230054'
 
 // WHYPE
-export const REFERENCE_TOKEN = '0x4200000000000000000000000000000000000006'
+export const REFERENCE_TOKEN = '0xaea851d35f86cd36efc573b7fb771d0756a67537'
 
 // USDT / WHYPE
-export const STABLE_TOKEN_PAIRS = ['0x9fDED442A608f220D61a1a7CF9f38D48B56C29Ca']
+export const STABLE_TOKEN_PAIRS = ['0x1ebb8960610070ef41783d129e414d26b1aaf318']
 
 // token where amounts should contribute to tracked volume and liquidity
 export const WHITELIST: string[] = [
-  '0x4200000000000000000000000000000000000006', // WHYPE
-  '0x5739988Bc59cAbB99168Df2A5483b80D76D88808', // USDT
-  '0x8c168cD0B207Dfc0f7a195D88CE7F1A4370e3050', // USDC
+  '0xaea851d35f86cd36efc573b7fb771d0756a67537', // WHYPE
+  '0x8c168cd0b207dfc0f7a195d88ce7f1a4370e3050', // USDT
+  '0x5739988bc59cabb99168df2a5483b80d76d88808', // USDC
 ]
 
 export const STABLECOINS = [
-  '0x5739988Bc59cAbB99168Df2A5483b80D76D88808', // USDT
-  '0x8c168cD0B207Dfc0f7a195D88CE7F1A4370e3050', // USDC
+  '0x8c168cd0b207dfc0f7a195d88ce7f1a4370e3050', // USDT
+  '0x5739988bc59cabb99168df2a5483b80d76d88808', // USDC
 ]
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
-export const MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('10000')
+export const MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('0')
 
 // minimum liquidity for price to get tracked
-export const MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('1')
+export const MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('0')
 
 export class TokenDefinition {
   address: Address
